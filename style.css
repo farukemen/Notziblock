@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d6efd;
+  width: 15vw;
+  height: 80vh;
+  padding: 50px 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.sidebar > h2 {
+  color: #ffffff;
+}
+
+.content {
+  background-color: #f1f2f6;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 0 10px 10px 0;
+}
+
+.col-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 0 10px 10px 0;
+  padding: 100px 20px;
+  src: url("./fonts/rubik-v23-latin-900.eot");
+}
+
+.btn-btn-primary > a {
+  margin-top: 150px;
+  width: 200px;
+  height: 40px;
+}
+
+.col-question {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f2f6;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+}
+
+.questionText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 20vh;
+}
+
+#questionText {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+}
+
+.col-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.col-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  list-style: none;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 80%;
+  padding: 5px 0 5px 30px;
+  cursor: pointer;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.col-list:hover {
+  background-color: #f1f2f6;
+}
+
+.col-list > p {
+  margin: 0px;
+}
+
+.col-list > p:nth-child(1) {
+  background-color: #dcdde1;
+  border-radius: 5px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.col-list > p:nth-child(2) {
+  padding-left: 20px;
+  src: url("./fonts/rubik-v23-latin-900.eot");
+}
+
+.questionLength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 32px;
+}
+
+.questionLength > p {
+  margin: 0px;
+}
+
+.bg-success,
+.bg-danger {
+  color: #ffffff;
+}
+
+.bg-end-screen {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+}
+
+.bg-end-screen-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 32vw;
+  height: 70vh;
+  border-radius: 50%;
+  background-color: #fad390;
+}
+
+.bg-end-screen-score {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 32px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 900;
+}
+
+.bg-end-screen-score > h3 {
+  color: #0d6efd;
+}
+
+.bg-end-screen-span {
+    font-size: 24px;
+}
+
+.bg-end-screen-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.bg-end-screen-button > button {
+  width: 180px;
+  height: 40px;
+  background-color: #ee5a24;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+
+.bg-end-screen-button > a {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #ee5a24;
+  text-decoration: none;
+}
+
+.progress {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .col-question {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-question {
+    width: 70vw;
+  }
+  .sidebar > h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 478px) {
+  .sidebar > h2 {
+    font-size: 16px;
+  }
+  .questionLength {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .col-list {
+    width: 100%;
+  }
+}
